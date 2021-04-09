@@ -99,6 +99,8 @@ main(int argc, char **argv)
   return 0;
 }
 
+// Calculates the partial derivatives
+
 void
 derivs(float xin, float yin[], float dydx[])
 {
