@@ -11,10 +11,10 @@
 // Hardwired parameters.
 
 #define N 4	        // Numer of equations to be solved
-#define G 9.82	    // Gravity 	             (m/s^2)
+#define G 9.82	    // Gravity 	             	 (m/s^2)
 #define L1 1.0	    // Length of first rod 	 (m)
-#define L2 1.0	    // Length of second rod  (m)
-#define M1 1.0	    // Mass of first bob 	   (kg)
+#define L2 1.0	    // Length of second rod  	 (m)
+#define M1 1.0	    // Mass of first bob 	 (kg)
 #define M2 1.0	    // Mass of second bob 	 (kg)
 
 void 
@@ -39,10 +39,10 @@ main(int argc, char **argv)
 
   TMIN  = atof(argv[1]);	    // Starting time 	             (s).
   TMAX  = atof(argv[2]);	    // Ending time   	             (s).
-  TH10  = atof(argv[3]);	    // Initial angle 1 	           (d).
-  W10   = atof(argv[4]);	    // Initial angular velocity 1  (d/s).
-  TH20  = atof(argv[5]);	    // Initial angle 2	           (d).
-  W20   = atof(argv[6]);	    // Initial angular velocity 2  (d/s).
+  TH10  = atof(argv[3]);	    // Initial angle 1 	             (d).
+  W10   = atof(argv[4]);	    // Initial angular velocity 1    (d/s).
+  TH20  = atof(argv[5]);	    // Initial angle 2	             (d).
+  W20   = atof(argv[6]);	    // Initial angular velocity 2    (d/s).
   NSTEP = atoi(argv[7]);	    // Number of integrations per step.
 
   // allocate memory for arrays of values of time, angles 1 and 2,
@@ -69,9 +69,9 @@ main(int argc, char **argv)
   // (r) = radians
   
   th1[0]  = TH10 * M_PI / 180.0;	      // Theta 1 	        (r)
-   w1[0]  =  W10 * M_PI / 180.0;	      // Theta velocity 1 (r/s)
+   w1[0]  =  W10 * M_PI / 180.0;	      // Theta velocity 1 	(r/s)
   th2[0]  = TH20 * M_PI / 180.0;	      // Theta 2 	        (r)
-   w2[0]  =  W20 * M_PI / 180.0; 	      // Theta velocity 2 (r/s)
+   w2[0]  =  W20 * M_PI / 180.0; 	      // Theta velocity 2 	(r/s)
 
   // perform the integration
 
