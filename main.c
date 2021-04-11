@@ -10,7 +10,7 @@
 
 // Hardwired parameters.
 
-#define N 4	        // Numer of equations to be solved
+#define N 4	    // Numer of equations to be solved
 #define G 9.82	    // Gravity 	             	 (m/s^2)
 #define L1 1.0	    // Length of first rod 	 (m)
 #define L2 1.0	    // Length of second rod  	 (m)
@@ -72,8 +72,6 @@ main(int argc, char **argv)
    w1[0]  =  W10 * M_PI / 180.0;	      // Theta velocity 1 	(r/s)
   th2[0]  = TH20 * M_PI / 180.0;	      // Theta 2 	        (r)
    w2[0]  =  W20 * M_PI / 180.0; 	      // Theta velocity 2 	(r/s)
-
-  // perform the integration
 
   printf("%f %f %f %f %f\n", t[0], th1[0], w1[0], th2[0], w2[0]);
 
