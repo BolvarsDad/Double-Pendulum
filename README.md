@@ -20,3 +20,12 @@ gcc main.c -lm
 ```
 The above code will compile the code using the GCC compiler, and then print out the results of the pendulum's motions and other properties in an outfile.txt
 text file, found in the same directory.
+
+### Python3
+To run the Python code, clone the repository into your directory, and compile it using the Python3 compiler.
+```py
+cd directory
+python3 main.py
+```
+The above code will run the Python code using the Python3 compiler and open the PyPlot window.
+
