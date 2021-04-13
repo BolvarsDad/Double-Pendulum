@@ -45,14 +45,13 @@ main(int argc, char **argv)
   W20   = atof(argv[6]);	    // Initial angular velocity 2    (d/s).
   NSTEP = atoi(argv[7]);	    // Number of integrations per step.
 
-  // allocate memory for arrays of values of time, angles 1 and 2,
-  // and angular velocities 1 and 2 respectively 
+  // allocate memory for:
 
-  t   = (float *) malloc(NSTEP * sizeof(float)); 
-  th1 = (float *) malloc(NSTEP * sizeof(float)); 
-  w1  = (float *) malloc(NSTEP * sizeof(float));
-  th2 = (float *) malloc(NSTEP * sizeof(float));
-  w2  = (float *) malloc(NSTEP * sizeof(float));
+  t   = (float *) malloc(NSTEP * sizeof(float)); 	// Time
+  th1 = (float *) malloc(NSTEP * sizeof(float)); 	// Angle 1
+  w1  = (float *) malloc(NSTEP * sizeof(float));	// Angular Velocity of pend 1
+  th2 = (float *) malloc(NSTEP * sizeof(float));	// Angle 2
+  w2  = (float *) malloc(NSTEP * sizeof(float));	// Angular Velocity of pend 2
 
   // stepsize for integration
 
